@@ -3,11 +3,17 @@ import SurveyForm from './SurveyForm';
 import SurveyFormReview from './SurveyFormReview';
 
 class SurveyNew extends Component {
+	// Not using normal "constructor" syntax due to a
+	// create-react-app babel plugin
 	state = { showFormReview: false };
 
 	renderContent() {
 		if (this.state.showFormReview) {
-			return <SurveyFormReview />;
+			return (
+				<SurveyFormReview
+					onCancel={() => this.setState({ showFormReview: false })}
+				/>
+			);
 		}
 
 		return (
