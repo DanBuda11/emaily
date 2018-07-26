@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": "8.2.1",
@@ -32,5 +31,7 @@
     "path-parser": "^2.0.2",
     "sendgrid": "^5.2.3",
     "stripe": "^4.24.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
